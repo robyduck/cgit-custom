@@ -1,15 +1,12 @@
-/* First include the GNOME style sheets. These are almost verbatim
- * those used for www.gnomeo.org with a few things that conflict
- * with cgit commented out */
+/* First include the Fedora style sheets. */
 @import "fedora-layout.css";
 @import "fedora-style.css";
 /* Then include the cgit style sheet */
 @import "cgit-fedora.css";
-@import "cgit_text.css";
 
-/* No logo for CGIT - we have one in the GNOME header */
 table#header td.logo {
-    display: none
+	height: 72px;
+	width: 274px;
 }
 
 #help-img .tab a {
@@ -17,24 +14,22 @@ table#header td.logo {
 	padding-left: 20px;
 }
 
-/* Removing padding around body so that the GNOME header goes to the edge as expected */
+/* Removing padding around body */
 body {
-
 	padding: 0px;
-   	background: url(http://www.gnome.org/wp-content/themes/gnome-grass/images/html-bg.png) repeat-x scroll 0 10px #FFFFFF;
-   	height: 100%;
-   	margin-bottom: 0px;
-        color: #2E3436;
-        font-family: Cantarell,'Droid Sans',Ubuntu,'DejaVu Sans',Arial,sans-serif;
-        font-size: 14px;
-        line-height: 1.6;
-        width: 100%;
+	background: url(http://www.gnome.org/wp-content/themes/gnome-grass/images/html-bg.png) repeat-x scroll 0 10px #FFFFFF;
+   height: 100%;
+   margin-bottom: 0px;
+   color: #2E3436;
+   font-family: Cantarell,'Droid Sans',Ubuntu,'DejaVu Sans',Arial,sans-serif;
+   font-size: 13px;
+   line-height: 1.5;
+   width: 100%;
 }
 
 #page {
-    width: 960px;
-    margin: auto;
-} 
+    width: 100%;
+}
 
 
 /* Make link colors more gnome-ish */
@@ -65,7 +60,7 @@ a, a:visited, a:hover, table.list td a:hover {
 
 .maxwidth {
     margin: 0 auto;
-    width: 940px;
+    width: 98%;
 }
 
 #global_domain_bar .tab {
@@ -104,7 +99,8 @@ a, a:visited, a:hover, table.list td a:hover {
  * GNOME header is float: left
  */
 table#header {
-    margin-top: 7em;
+    margin-top: 3em;
+    margin-bottom: 2em;
     clear: both;
 }
 
@@ -136,7 +132,7 @@ table.tabs {
 #footer_community {
     background: url(http://www.gnome.org/wp-content/themes/gnome-grass/images/footer_arts/community.png) center no-repeat;
     height: 180px;
-    bottom: 0; 
+    bottom: 0;
 }
 
 /* FOOTER  */
@@ -216,10 +212,7 @@ a.branch-deco, a.tag-deco {
     padding: 1px 0.25em;
 }
 
-
 /*top bar*/
-
-
 
 #top_bar ul {
     list-style: none outside none;
@@ -384,7 +377,7 @@ input {
 
 #cgit {
 	margin: auto;
-	width: 960px;
+	width: 96%;
 }
 
 

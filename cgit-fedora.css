@@ -4,7 +4,7 @@ body, table, form {
 }
 
 body {
-        background: url(http://www.gnome.org/wp-content/themes/gnome-grass/images/html-bg.png) repeat-x scroll 0 10px #FFFFFF;
+   background: url(http://www.gnome.org/wp-content/themes/gnome-grass/images/html-bg.png) repeat-x scroll 0 10px #FFFFFF;
 	font-family: sans-serif;
 	font-size: 10pt;
 	color: #333;
@@ -24,16 +24,12 @@ a:hover {
 table {
       background: none;
       border-collapse: collapse;
-      margin: auto;
-      width: 960px;
 }
 
 table#header {
 	width: 100%;
 	margin-bottom: 1em;
 }
-
-
 
 table#header td.logo {
 	width: 96px;
@@ -43,6 +39,7 @@ table#header td.main {
 	font-size: 250%;
 	margin-top: 10px;
 	white-space: nowrap;
+	padding-left: 50px;
 }
 
 table#header td.main a {
@@ -66,7 +63,7 @@ table#header td.form select {
 table#header td.sub {
 	color: #777;
 	border-top: solid 1px #ccc;
-	padding-left: 10px;
+	padding-left: 60px;
 }
 
 table.tabs {
@@ -74,11 +71,11 @@ table.tabs {
 	border-collapse: collapse;
 	margin-top: 2em;
 	margin-bottom: 0px;
-	width: 960px;
+	width: 100%;
 }
 
 table.tabs td {
-	padding: 0px 0em;
+	padding: 0px 1em;
 	vertical-align: bottom;
 }
 
@@ -103,25 +100,33 @@ table.tabs td.form form {
 	white-space: nowrap;
 }
 
+table.tabs td.form input,
+table.tabs td.form select {
+	font-size: 90%;
+}
+
+div.path {
+	margin: 0px;
+	padding: 5px 2em 2px 2em;
+	color: #000;
+	background-color: #eee;
+}
 
 div.content {
 	margin: 0px;
 	padding-top: 2em;
 	border-top: solid 3px #ccc;
-	width: 960px;
 }
 
 
 table.list {
-	width: 960px;
+	width: 100%;
 	border: none;
 	border-collapse: collapse;
 }
 
 table.list tr {
 	background: none;
-	margin: auto;
-	width: 960px;
 }
 
 table.list tr.logheader {
@@ -151,6 +156,35 @@ table.list td {
 	padding: 0.1em 0.5em 0.1em 0.5em;
 }
 
+table.list td.commitgraph {
+	font-family: monospace;
+	white-space: pre;
+}
+
+table.list td.commitgraph .column1 {
+	color: #a00;
+}
+
+table.list td.commitgraph .column2 {
+	color: #0a0;
+}
+
+table.list td.commitgraph .column3 {
+	color: #aa0;
+}
+
+table.list td.commitgraph .column4 {
+	color: #00a;
+}
+
+table.list td.commitgraph .column5 {
+	color: #a0a;
+}
+
+table.list td.commitgraph .column6 {
+	color: #0aa;
+}
+
 table.list td.logsubject {
 	font-family: monospace;
 	font-weight: bold;
@@ -159,11 +193,16 @@ table.list td.logsubject {
 table.list td.logmsg {
 	font-family: monospace;
 	white-space: pre;
-	padding: 1em 0em 2em 0em;
+	padding: 0 0.5em;
 }
 
 table.list td a {
 	color: black;
+}
+
+table.list td a.ls-dir {
+	font-weight: bold;
+	color: #00f;
 }
 
 table.list td a:hover {
@@ -241,14 +280,15 @@ table.blob {
 }
 
 table.blob td.lines {
-	margin: 0; padding: 0;
+	margin: 0; padding: 0 0 0 0.5em;
 	vertical-align: top;
 	color: black;
 }
 
 table.blob td.linenumbers {
-	margin: 0; padding: 0;
+	margin: 0; padding: 0 0.5em 0 0.5em;
 	vertical-align: top;
+	text-align: right;
 	border-right: 1px solid gray;
 	background-color: #eee;
 }
@@ -257,7 +297,7 @@ table.blob pre {
 	padding: 0; margin: 0;
 }
 
-table.blob a.no {
+table.blob a.no, table.ssdiff a.no {
 	color: gray;
 	text-align: right;
 	text-decoration: none;
@@ -317,6 +357,24 @@ div.commit-subject {
 div.commit-msg {
 	white-space: pre;
 	font-family: monospace;
+}
+
+div.notes-header {
+	font-weight: bold;
+	padding-top: 1.5em;
+}
+
+div.notes {
+	white-space: pre;
+	font-family: monospace;
+	border: solid 1px #ee9;
+	background-color: #ffd;
+	padding: 0.3em 2em 0.3em 1em;
+	float: left;
+}
+
+div.notes-footer {
+	clear: left;
 }
 
 div.diffstat-header {
@@ -400,6 +458,7 @@ table.diff {
 table.diff td {
 	font-family: monospace;
 	white-space: pre;
+	font-size: 12px;
 }
 
 table.diff td div.head {
@@ -433,7 +492,7 @@ table.diff td div.del {
 	text-align: right;
 }
 
-table.list td.repogroup {
+table.list td.reposection {
 	font-style: italic;
 	color: #888;
 }
@@ -606,8 +665,10 @@ table.hgraph div.bar {
 	height: 1em;
 }
 
+table.ssdiff {
+	width: 100%;
+}
 
 tbody {
-	width: 960px;
-	margin: auto;
+	width: 100%;
 }
