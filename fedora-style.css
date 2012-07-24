@@ -17,7 +17,7 @@ body {
 
 div#global_domain_bar a {
     	color: #2E3436;
-    	font-family: Cantarell,'Droid Sans',Ubuntu,'DejaVu Sans',Arial,sans-serif;
+    	font-family: Cantarell,'Droid Sans','DejaVu Sans',Arial,sans-serif;
    	font-size: 14px;
     	line-height: 1.6;
 }
@@ -32,9 +32,8 @@ div#content a:hover {
 	border-bottom: 1px solid #888;
 }
 
-
 body {
-    font-family: Cantarell, 'Droid Sans', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+    font-family: Cantarell, 'Droid Sans', 'DejaVu Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
     color: #2e3436;
@@ -123,22 +122,10 @@ code {
     color: #888a85;
 }
 
-.more {
-    background: url(../images/more-arrow.png) right 6px no-repeat;
-    cursor: pointer;
-    white-space: nowrap;
-    padding-right: 10px;
-    text-decoration: none;
-}
-.more {
-    text-decoration: underline;
-}
-
 #footer {
     font-size: 11px;
     line-height: 1.5em;
 }
-
 
 /*  lists  */
 
@@ -213,23 +200,6 @@ option {
 
 input[type=radio] {
   margin-left: 1em;
-}
-
-
-
-
-/* Footer Grass */
-
-#footer_grass {
-    background: url(http://www.gnome.org/wp-content/themes/gnome-grass/images/grass.png) top center repeat-x;
-    height: 39px;
-    margin-top: -33px;
-}
-
-#footer_community {
-    background: url(http://www.gnome.org/wp-content/themes/gnome-grass/images/footer_arts/community.png) center no-repeat;
-    height: 180px;
-    margin-top: -33px;
 }
 
 /* Syntax highlighting */
